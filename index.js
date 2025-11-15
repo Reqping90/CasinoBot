@@ -759,7 +759,7 @@ async function myclann(userid) {
 	return clannamee
 }
 async function sendRandomBox() {
-	const randomAmount = Math.floor(Math.random() * (500 - 100 + 1)) + 100;
+	const randomAmount = Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000;
 	const guild = client.guilds.cache.get(bettingserverid);
 	const everyoneRole = guild.roles.everyone;
 	const channels = client.channels.cache.filter(channel => channel.type === 'GUILD_TEXT' && notifycateg.includes(channel.parentId) && (channel.permissionsFor(everyoneRole)?.has('VIEW_CHANNEL', false) || channel.permissionsFor(everyoneRole)?.has('VIEW_CHANNEL', true)));
