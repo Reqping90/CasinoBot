@@ -1,11 +1,11 @@
-# 🎰 CasinoBot
+# 🎰 DSCasino.JS
 
 ![Node.js](https://img.shields.io/badge/Node.js-v18%2B-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Discord.js](https://img.shields.io/badge/Discord.js-v14-5865F2?style=for-the-badge&logo=discord&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Mongoose-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-**CasinoBot** is an interactive, full-featured Discord Casino and Virtual Economy Bot built with **Node.js**, **Discord.js v14**, and **MongoDB**. It brings a complete casino experience directly into your Discord server with interactive button and select-menu gameplay, real-time canvas and embed visuals, a dual-currency wallet system (Server Credits & Crypto/Tokens), provably fair RNG, and comprehensive server administration tools.
+**DSCasino.JS** is an interactive, full-featured Discord Casino and Virtual Economy Bot built with **Node.js**, **Discord.js v14**, and **MongoDB**. It brings a complete casino experience directly into your Discord server with interactive button and select-menu gameplay, real-time canvas and embed visuals, a dual-currency wallet system (Server Credits & Crypto/Tokens), provably fair RNG, and comprehensive server administration tools.
 
 ---
 
@@ -41,7 +41,7 @@
 
 ## 📜 Commands List
 
-CasinoBot supports both **Slash Commands (`/`)** and **Prefix Commands (`!` or `$`)**.
+DSCasino.JS supports both **Slash Commands (`/`)** and **Prefix Commands (`!` or `$`)**.
 
 ### 💰 Economy & Wallet Commands
 | Command | Aliases | Arguments | Description |
@@ -142,7 +142,7 @@ Gameplay parameters, betting limits, and visual styles are controlled via the co
 ```json
 {
   "bot": {
-    "name": "CasinoBot",
+    "name": "Casino",
     "prefix": "!",
     "status": "🎰 /help | Provably Fair Casino",
     "activityType": "Competing",
@@ -218,7 +218,7 @@ Gameplay parameters, betting limits, and visual styles are controlled via the co
 ## 📁 Project Structure
 
 ```text
-CasinoBot/
+DSCasino.JS/
 ├── src/
 │   ├── commands/
 │   │   ├── admin/          # Balance management, blacklist, maintenance
@@ -256,8 +256,8 @@ CasinoBot/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Reqping90/CasinoBot.git
-   cd CasinoBot
+   git clone https://github.com/Reqping90/DSCasino.JS.git
+   cd DSCasino.JS
    ```
 
 2. **Install dependencies:**
@@ -291,7 +291,7 @@ CasinoBot/
 
 ## 🔐 Provably Fair Mechanism
 
-Every game outcome in **CasinoBot** is deterministically verifiable using cryptographic hashing:
+Every game outcome in **DSCasino.JS** is deterministically verifiable using cryptographic hashing:
 1. Before a game starts, the bot generates a secret **Server Seed** and shows the player its $\text{SHA-256}$ hash.
 2. The player can set their own custom **Client Seed** at any time.
 3. Outcomes are calculated using:
